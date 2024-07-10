@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jun 20 18:37:29 2019
-
-@author: Keng Siew Chan
-Linear regression for prediction of the efficiency of Si solar cell
-"""
-
 import numpy as np 
 import tensorflow as tf 
 import matplotlib.pyplot as plt 
@@ -165,8 +157,3 @@ with tf.Session() as sess:
  
     error_val = (1/n_val)*sum(abs(y_val-predictions_val)/abs(y_val))*100
     print("Mean Absolute Percent Error for cross validation set is  " + "%.2f" % error_val +"%")
-    
-    
-    
-    
-    
